@@ -1,29 +1,35 @@
-Python 2.7.15 (v2.7.15:ca079a3ea3, Apr 30 2018, 16:30:26) [MSC v.1500 64 bit (AMD64)] on win32
-Type "copyright", "credits" or "license()" for more information.
->>> 
-================== RESTART: C:/Users/opet/Desktop/PILHA.py ==================
-[20, 10, 40, 30]
-[20, 10, 40, 30, 50]
-[20, 10, 40, 30]
+#pilha
 
-Traceback (most recent call last):
-  File "C:/Users/opet/Desktop/PILHA.py", line 14, in <module>
-    print(valor)
-NameError: name 'valor' is not defined
->>> 
-================== RESTART: C:/Users/opet/Desktop/PILHA.py ==================
-[20, 10, 40, 30]
-[20, 10, 40, 30, 50]
-[20, 10, 40, 30]
-50
->>> 
-================== RESTART: C:/Users/opet/Desktop/PILHA.py ==================
-[20, 10, 40, 30]
-[20, 10, 40, 30, 50]
-[20, 10, 40, 30]
-50
-[20, 10, 40, 30]
-[20, 10, 40, 30, 50]
-[10, 40, 30, 50]
-20
->>> 
+pilha = [20,10,40,30]
+
+print(pilha)
+
+pilha.append(50)
+
+print(pilha)
+
+valor = pilha.pop()
+
+print(pilha)
+print(valor)
+
+#fila
+
+fila = [20,10,40,30]
+print(fila)
+fila.append(50)
+print(fila)
+valor = fila.pop(0)
+print(fila)
+print(valor)
+
+#fila prioritaria
+
+fila = [10,20,30,40]
+print(fila)
+fila.append(25)
+fila.sort()
+print(fila)
+valor = fila.pop(0)
+print(fila)
+print(valor)
